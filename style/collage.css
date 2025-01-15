@@ -74,3 +74,17 @@ img{
     }
     
 }
+
+@media screen and (max-width: 992px) {
+    .row-content{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .square-collage{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+    
+}
