@@ -42,6 +42,10 @@ header{
     grid-row: span 5;
 }
 
+#box6, #box7, #box9, #box10{
+    background-color: brown;
+}
+
 #box11, #box12{
     grid-column: span 3;
 }
