@@ -19,6 +19,9 @@ header{
 
 .my-collage{
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 img{
@@ -29,25 +32,45 @@ img{
 
 }
 
-.row{
-    height: 400px;
+.row-content{
+    height: 70vh;
     display: flex;
     gap: 5px;
-    margin-bottom: 5px;
-    
 }
 
-.row > div{
+.row-content > div{
     flex: 1;
+}
+
+.vertical-collage{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .vertical-collage > div{
     height: calc((100% - 5px) /2);
-    margin-bottom: 5px;
+    
 }
 
 .square-collage{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+}
+
+/* Responsive styles for collage    */
+
+@media screen and (max-width: 576px) {
+    .row-content{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .square-collage{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+    
 }
