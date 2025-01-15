@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+
+    <style>
+        body{
+            max-width: 1180px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            gap: 30px;
+
+            margin-bottom: 20px;
+        }
+
+        .box{
+            background-color: blueviolet;
+            padding: 20px;
+        }
+
+        .box-info{
+            text-align: justify;
+
+        }
+
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .item{
+            background-color: aquamarine;
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Responsive Layout with Flexbox</h1>
+    <div class="container">
+        <div class="box">
+            <h2>Box - 1</h2>
+            <p class="box-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate assumenda et aperiam doloribus eius, eveniet ipsum. Eos quo impedit aliquid nobis, doloremque porro harum fuga praesentium officia facilis animi, laboriosam aspernatur quibusdam eius! Quam animi illum quia quibusdam qui, illo fugit quisquam enim temporibus nostrum! Sed tempora voluptate odit voluptatibus.</p>
+        </div>
+        <div class="box">
+            <h2>Box - 2</h2>
+            <p class="box-info">Tempore quos nostrum suscipit obcaecati similique neque, ex ipsum animi aliquid ad temporibus ipsam facilis accusantium tenetur sequi, sit iste cum nemo numquam minus quia molestias. Vel ex illum distinctio voluptates natus esse sint sit assumenda delectus, sapiente velit numquam sequi quas repellat blanditiis modi. Exercitationem repellat magni vitae quam.</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="item">Item - 1</div>
+        <div class="item">Item - 2</div>
+        <div class="item">Item - 3</div>
+        <div class="item">Item - 4</div>
+        <div class="item">Item - 5</div>
+        <div class="item">Item - 6</div>
+        <div class="item">Item - 7</div>
+        <div class="item">Item - 8</div>
+        <div class="item">Item - 9</div>
+        <div class="item">Item - 10</div>
+    </div>
+</body>
+</html>
